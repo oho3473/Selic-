@@ -1,0 +1,450 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="EntryPoint">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="GameLogic">
+      <UniqueIdentifier>{688fe117-2039-4f07-8240-0a48cf4f8502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{bd608d96-ea49-4670-abdb-405abb22f7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{741d4301-a3e5-476a-b127-cda4506b1f89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{6923cf95-ba7c-4055-8331-9ee5e01e30b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Object">
+      <UniqueIdentifier>{f4753518-7f8d-400b-bcc2-3aeab63e59c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\KEYMANAGER">
+      <UniqueIdentifier>{c997e133-4d9b-4e39-ac07-dac9beacba70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\TIMEMANAGER">
+      <UniqueIdentifier>{67b3ab8d-563d-47f2-af3a-c9b5b1248406}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\START">
+      <UniqueIdentifier>{656f1556-2643-41c9-874f-158396bc2fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{75082094-fdce-4e6f-84f1-78a9c0a84e41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\KEYWORDMANAGER">
+      <UniqueIdentifier>{36fb73b5-b761-4097-8fbd-177aee4e50fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER">
+      <UniqueIdentifier>{28cb4c3d-a9c9-47b9-a681-8ec2236641b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\SceneManager">
+      <UniqueIdentifier>{7c79bae4-38c9-4ef6-8555-1b6570c529d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene">
+      <UniqueIdentifier>{03330423-8ca6-49d8-9711-e935fba01146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\EVENTMANAGER">
+      <UniqueIdentifier>{7828ff02-369b-468a-a790-dfd531fe34ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BackGround">
+      <UniqueIdentifier>{6669cc41-a0cf-45e3-bb4c-849a6d885686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE">
+      <UniqueIdentifier>{05eb8005-0162-4e34-a8f5-4eaf2bbc040e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\KeyWord">
+      <UniqueIdentifier>{448c8a09-8046-47b2-9a41-257bd888c3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster">
+      <UniqueIdentifier>{04a6dd6e-8a31-498d-9db8-3eef435f5859}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player">
+      <UniqueIdentifier>{ca729310-2d39-47cd-becc-378c48bb8105}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Timer">
+      <UniqueIdentifier>{8d883442-4a89-4418-a14c-79ba603b47f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\PATHMANANGER">
+      <UniqueIdentifier>{245c085a-0686-4592-8acc-2af53c7c713c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster\MonsterGauge">
+      <UniqueIdentifier>{2740f4fb-3889-4b4a-a525-857761939c45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster\MosterHP">
+      <UniqueIdentifier>{f6ebdf94-225a-44fe-abc6-8525064f9e44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player\PlayerHP">
+      <UniqueIdentifier>{1e7018d9-bb13-4e5e-ad2f-ce45c5b4074e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player\PlayerShield">
+      <UniqueIdentifier>{93f6e7e3-dcb9-4cc7-81c2-572e64ce7cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player\Player">
+      <UniqueIdentifier>{ae055630-fd00-4a63-a106-6f4ce9ff7351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player\PlayerMissile">
+      <UniqueIdentifier>{429f3e1a-97b0-4fbe-af84-e5ca38aceecc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster\EntMonster">
+      <UniqueIdentifier>{459ef915-3618-45bd-975b-ef8bc0828620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTMAP1">
+      <UniqueIdentifier>{e49e5de6-891b-4ed3-a079-230c8ac7c6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTMAP2">
+      <UniqueIdentifier>{14c1cd18-32ef-4d62-afeb-3c697a8d3974}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\STAGE1">
+      <UniqueIdentifier>{b8be32fd-8ee0-4f9b-9392-da94ef9632eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\STAGE2">
+      <UniqueIdentifier>{778b42a2-660b-429a-b167-9fb78febb119}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\STAGE3">
+      <UniqueIdentifier>{b57da0c9-f8aa-4845-82ef-61fc7c200a62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\TITLE">
+      <UniqueIdentifier>{da55b20e-2884-4eeb-b9ff-dae063c71a53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Change">
+      <UniqueIdentifier>{5932fae8-ccee-4194-a394-de50af277f55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Player\ScenePlayer">
+      <UniqueIdentifier>{abad8d60-442c-43dc-a872-56cc9025db6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTMAP3">
+      <UniqueIdentifier>{cb21e775-077a-4477-9165-3289e9de1a24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster\Golem">
+      <UniqueIdentifier>{a7f5953d-fbd7-4d13-a567-255fcae7b498}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\For_STAGE\Monster\Goblin">
+      <UniqueIdentifier>{9321cf8c-f0c0-40f0-b375-35669af92277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SOUNDMANAGER">
+      <UniqueIdentifier>{0ef4c6ab-4479-4a92-bb4b-611b30ddbdc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\END">
+      <UniqueIdentifier>{3afb9c98-be54-42b8-bef7-481132875979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\CLEAR">
+      <UniqueIdentifier>{4303223f-3ed9-4ff7-964b-aa54bef1a5a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTMAP0">
+      <UniqueIdentifier>{d145c96b-9b35-4363-8a5b-f1f18a921528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\QUIT">
+      <UniqueIdentifier>{bfc74397-127f-4c4f-90fa-a0ba044ddc49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\QUIT\GameQuitButton">
+      <UniqueIdentifier>{5236369d-b13b-44a1-af43-0a74717da625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\START\GameStartButton">
+      <UniqueIdentifier>{77d593d0-bd5e-4667-959e-15b1b7d00e29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Firework">
+      <UniqueIdentifier>{34713553-d88e-474a-bab9-2e732b0dd018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTART1">
+      <UniqueIdentifier>{89775a01-ec88-44be-85e5-60f3616553a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTART3">
+      <UniqueIdentifier>{bbaa830b-4e7a-4e86-a82e-cf8efc2fc95b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\SCENEMANAGER\Scene\RESTART2">
+      <UniqueIdentifier>{bdecf5a6-bf1c-430b-913f-8e3c4e3cc451}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>GameObject\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Manager\TIMEMANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyManager.h">
+      <Filter>Manager\KEYMANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneManager.h">
+      <Filter>Manager\SCENEMANAGER\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Manager\SCENEMANAGER\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="STAGE1.h">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE1</Filter>
+    </ClInclude>
+    <ClInclude Include="pc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTime.h">
+      <Filter>GameObject\For_STAGE\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWord.h">
+      <Filter>GameObject\For_STAGE\KeyWord</Filter>
+    </ClInclude>
+    <ClInclude Include="TITLE.h">
+      <Filter>Manager\SCENEMANAGER\TITLE</Filter>
+    </ClInclude>
+    <ClInclude Include="StartButton.h">
+      <Filter>GameObject\START\GameStartButton</Filter>
+    </ClInclude>
+    <ClInclude Include="END.h">
+      <Filter>Manager\SCENEMANAGER\Scene\END</Filter>
+    </ClInclude>
+    <ClInclude Include="MapChangeButton.h">
+      <Filter>GameObject\Change</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Manager\EVENTMANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="func.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="KeywordManager.h">
+      <Filter>Manager\KEYWORDMANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerHP.h">
+      <Filter>GameObject\For_STAGE\Player\PlayerHP</Filter>
+    </ClInclude>
+    <ClInclude Include="Missile.h">
+      <Filter>GameObject\For_STAGE\Player\PlayerMissile</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterHP.h">
+      <Filter>GameObject\For_STAGE\Monster\MosterHP</Filter>
+    </ClInclude>
+    <ClInclude Include="Shield.h">
+      <Filter>GameObject\For_STAGE\Player\PlayerShield</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>Manager\PATHMANANGER</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>GameObject\For_STAGE\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>GameObject\For_STAGE\Player\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="EntMonster.h">
+      <Filter>GameObject\For_STAGE\Monster\EntMonster</Filter>
+    </ClInclude>
+    <ClInclude Include="Gauge.h">
+      <Filter>GameObject\For_STAGE\Monster\MonsterGauge</Filter>
+    </ClInclude>
+    <ClInclude Include="STAGE2.h">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE2</Filter>
+    </ClInclude>
+    <ClInclude Include="STAGE3.h">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE3</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTMAP2.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP2</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTMAP1.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP1</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEAR.h">
+      <Filter>Manager\SCENEMANAGER\Scene\CLEAR</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTMAP3.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP3</Filter>
+    </ClInclude>
+    <ClInclude Include="Golem.h">
+      <Filter>GameObject\For_STAGE\Monster\Golem</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Manager\SOUNDMANAGER</Filter>
+    </ClInclude>
+    <ClInclude Include="Goblin.h">
+      <Filter>GameObject\For_STAGE\Monster\Goblin</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTMAP0.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP0</Filter>
+    </ClInclude>
+    <ClInclude Include="QuitButton.h">
+      <Filter>GameObject\QUIT\GameQuitButton</Filter>
+    </ClInclude>
+    <ClInclude Include="ScenePlayer.h">
+      <Filter>GameObject\For_STAGE\Player\ScenePlayer</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTART1.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART1</Filter>
+    </ClInclude>
+    <ClInclude Include="Firework.h">
+      <Filter>GameObject\Firework</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTART2.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART2</Filter>
+    </ClInclude>
+    <ClInclude Include="RESTART3.h">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART3</Filter>
+    </ClInclude>
+    <ClInclude Include="resource2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>EntryPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>GameObject\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Manager\TIMEMANAGER</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyManager.cpp">
+      <Filter>Manager\KEYMANAGER</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneManager.cpp">
+      <Filter>Manager\SCENEMANAGER\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="STAGE1.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE1</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTime.cpp">
+      <Filter>GameObject\For_STAGE\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyWord.cpp">
+      <Filter>GameObject\For_STAGE\KeyWord</Filter>
+    </ClCompile>
+    <ClCompile Include="TITLE.cpp">
+      <Filter>Manager\SCENEMANAGER\TITLE</Filter>
+    </ClCompile>
+    <ClCompile Include="StartButton.cpp">
+      <Filter>GameObject\START\GameStartButton</Filter>
+    </ClCompile>
+    <ClCompile Include="END.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\END</Filter>
+    </ClCompile>
+    <ClCompile Include="MapChangeButton.cpp">
+      <Filter>GameObject\Change</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Manager\EVENTMANAGER</Filter>
+    </ClCompile>
+    <ClCompile Include="func.cpp" />
+    <ClCompile Include="KeywordManager.cpp">
+      <Filter>Manager\KEYWORDMANAGER</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerHP.cpp">
+      <Filter>GameObject\For_STAGE\Player\PlayerHP</Filter>
+    </ClCompile>
+    <ClCompile Include="Missile.cpp">
+      <Filter>GameObject\For_STAGE\Player\PlayerMissile</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHP.cpp">
+      <Filter>GameObject\For_STAGE\Monster\MosterHP</Filter>
+    </ClCompile>
+    <ClCompile Include="Shield.cpp">
+      <Filter>GameObject\For_STAGE\Player\PlayerShield</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>Manager\PATHMANANGER</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>GameObject\For_STAGE\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>GameObject\For_STAGE\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="EntMonster.cpp">
+      <Filter>GameObject\For_STAGE\Monster\EntMonster</Filter>
+    </ClCompile>
+    <ClCompile Include="Gauge.cpp">
+      <Filter>GameObject\For_STAGE\Monster\MonsterGauge</Filter>
+    </ClCompile>
+    <ClCompile Include="STAGE2.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE2</Filter>
+    </ClCompile>
+    <ClCompile Include="STAGE3.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\STAGE3</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTMAP2.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP2</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTMAP1.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP1</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEAR.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\CLEAR</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTMAP3.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP3</Filter>
+    </ClCompile>
+    <ClCompile Include="Golem.cpp">
+      <Filter>GameObject\For_STAGE\Monster\Golem</Filter>
+    </ClCompile>
+    <ClCompile Include="ScenePlayer.cpp">
+      <Filter>GameObject\For_STAGE\Player\ScenePlayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.cpp">
+      <Filter>Manager\SOUNDMANAGER</Filter>
+    </ClCompile>
+    <ClCompile Include="Goblin.cpp">
+      <Filter>GameObject\For_STAGE\Monster\Goblin</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTMAP0.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTMAP0</Filter>
+    </ClCompile>
+    <ClCompile Include="QuitButton.cpp">
+      <Filter>GameObject\QUIT\GameQuitButton</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTART1.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART1</Filter>
+    </ClCompile>
+    <ClCompile Include="Firework.cpp">
+      <Filter>GameObject\Firework</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTART2.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART2</Filter>
+    </ClCompile>
+    <ClCompile Include="RESTART3.cpp">
+      <Filter>Manager\SCENEMANAGER\Scene\RESTART3</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Game.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Selic.ico" />
+  </ItemGroup>
+</Project>
