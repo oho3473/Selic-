@@ -121,7 +121,7 @@ public:
 ```
 
 상속을 통해 파생된 다양한 게임 오브젝트를 M_Update()/M_Render()등 일관된 동작으로 처리했습니다.
-[GameObject BaseClass](.Game/Scene.cpp#L6)
+[SCENE::M_Update()](.Game/Scene.cpp#L6)
 ```cpp
 void SCENE::M_Update()
 {
