@@ -58,44 +58,43 @@ struct KEYINFO
 </table>
 
 정의한 키를 바탕으로 KeyManager는 매프레임 키 입력에대한 상태를 갱신합니다.
-[전체 코드 보기](./Game/KeyManager.cpp#L34)
+[KeyManager::M_Update()](./Game/KeyManager.cpp#L34)
 ```cpp
 void KeyManager::M_Update()
 {
-		for (int i = 0; i < (int)KEY::LAST; ++i)
+	for (int i = 0; i < (int)KEY::LAST; ++i)
+	{
+		//키가 눌려있다
+		if (GetAsyncKeyState(g_KeyArray[i]) & 0x8000)
 		{
-			//키가 눌려있다
-			if (GetAsyncKeyState(g_KeyArray[i]) & 0x8000)
+			//이전에도 눌렸다
+			if (m_key[i].is_KeyDown)
 			{
-				//이전에도 눌렸다
-				if (m_key[i].is_KeyDown)
-				{
-					m_key[i].keystate = KEYSTATE::HOLD;
-				}
-				else
-				{
-					//이전에도 안눌려있었다
-					m_key[i].keystate = KEYSTATE::TAP;
-				}
-
-				m_key[i].is_KeyDown = true;
+				m_key[i].keystate = KEYSTATE::HOLD;
 			}
-			//안눌렸다
 			else
 			{
-				if (m_key[i].is_KeyDown)
-				{
-					//이전에 눌려있었다
-					m_key[i].keystate = KEYSTATE::AWAY;
-				}
-				else
-				{
-					//이전에도 안눌려있었다
-					m_key[i].keystate = KEYSTATE::NONE;
-				}
-				m_key[i].is_KeyDown = false;
+				//이전에도 안눌려있었다
+				m_key[i].keystate = KEYSTATE::TAP;
 			}
+				m_key[i].is_KeyDown = true;
 		}
+		//안눌렸다
+		else
+		{
+			if (m_key[i].is_KeyDown)
+			{
+				//이전에 눌려있었다
+				m_key[i].keystate = KEYSTATE::AWAY;
+			}
+			else
+			{
+				//이전에도 안눌려있었다
+				m_key[i].keystate = KEYSTATE::NONE;
+			}
+			m_key[i].is_KeyDown = false;
+		}
+	}
 }
 ```
 
