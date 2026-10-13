@@ -99,3 +99,41 @@ void KeyManager::M_Update()
 ```
 
 ### 2. 게임 메인 구조
+객체별로 흩어진 변수와 로직을 공통된 구조에서 관리할 필요성을 느꼈습니다.
+이를 위해 GameObject 기반 구조를 설계하고, 게임 내 오브젝트들이 공통 인터페이스를 상속받아 동작하도록 구성했습니다.
+<img width="801" height="703" alt="image" src="https://github.com/user-attachments/assets/a8f9ccc9-5224-4e36-b3dd-abf23ed59c96" />
+
+[GameObject BaseClass](.Game/GameObject.h)
+```cpp
+class GameObject
+{
+public:
+	GameObject();
+	virtual ~GameObject();
+
+.....
+
+public:
+
+	virtual void M_Update() = 0;
+	virtual void M_Render(HDC hdc);
+};
+```
+
+상속을 통해 파생된 다양한 게임 오브젝트를 M_Update()/M_Render()등 일관된 동작으로 처리했습니다.
+[GameObject BaseClass](.Game/Scene.cpp#L6)
+```cpp
+void SCENE::M_Update()
+{
+	for (UINT i = 0; i < (UINT)GROUPTYPE::END; ++i)
+	{
+		for (size_t j = 0; j < m_Object_Array[i].size(); ++j)
+		{
+			if (!m_Object_Array[i][j]->M_Is_Dead())
+			{
+				m_Object_Array[i][j]->M_Update();
+			}
+		}
+	}
+}
+```
