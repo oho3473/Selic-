@@ -11,7 +11,7 @@ void Animation::M_AddAnimation(const wchar_t* _filename, int _frame, float _time
 
 void Animation::M_SetAnimation(ANIMESTATUS _status, LOOPSTATUS _LOOPSTATUS)
 {
-	//ÇöÀç»óÅÂ
+	//í˜„ìž¬ìƒíƒœ
 	m_current_status = _status;
 	m_flowing_time = 0;
 	m_framePose_List.clear();
@@ -31,10 +31,10 @@ void Animation::M_PlayAnimation(int _initX, int _initY, HDC _hdc)
 	//HDC
 	Gdiplus::Graphics Grapic(_hdc);
 
-	//½Ã°£ Èå¸§.
+	//ì‹œê°„ íë¦„.
 	m_flowing_time = m_flowing_time + TimeManager::GetInstance()->M_Get_Frame_Time_Float();
 
-	//ÇÁ·¹ÀÓ Èå¸§
+	//í”„ë ˆìž„ íë¦„
 	if (m_flowing_time > m_frametime)
 	{
 		switch (m_loop)
@@ -80,7 +80,7 @@ void Animation::M_PlayAnimation(int _initX, int _initY, HDC _hdc)
 	Gdiplus::Rect rect_size(_initX, _initY, (int)((m_pTestImage[(UINT)m_current_status]->GetWidth() / m_imageInfo[DATA_LIST::FRAME][(UINT)m_current_status])), (int)m_pTestImage[(UINT)m_current_status]->GetHeight());
 
 
-	//±×¸®±â
+	//ê·¸ë¦¬ê¸°
 	Grapic.DrawImage(
 		m_pTestImage[(UINT)m_current_status],
 		rect_size,
