@@ -120,7 +120,7 @@ public:
 };
 ```
 
-상속을 통해 파생된 다양한 게임 오브젝트를 M_Update()/M_Render()등 일관된 동작으로 처리했습니다.
+이를 바탕으로 게임을 구성하는 Scene 단위에서 다양한 게임 오브젝트를 M_Update()/M_Render()등의 일관된 동작으로 처리했습니다.<br>
 [SCENE::M_Update()](.Game/Scene.cpp#L6)
 ```cpp
 void SCENE::M_Update()
