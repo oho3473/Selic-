@@ -23,13 +23,16 @@ https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
 <table>
 <tr>
 <th>구현 설명</th>
-<th>핵심 코드</th>
+<th>상태정의 코드</th>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
 키 입력을 네 가지 상태로 구분했습니다.<br><br>
-이전 프레임의 눌림 여부와 현재 입력을 비교하여 상태를 갱신합니다.
+- TAP
+- HOLD
+- AWAY
+- NONE
 
 </td>
 <td width="50%" valign="top">
@@ -42,6 +45,26 @@ enum class KEYSTATE
     HOLD,
     AWAY
 };
+
+enum class KEY
+{
+	LEFT,
+	RIGHT,
+	UP,
+	DOWN,
+	SPACE,
+	ENTER,
+	BACK,
+	ESCAPE,
+
+	LAST
+};
+
+struct KEYINFO
+{
+	KEYSTATE keystate;	//키 상태
+	bool is_KeyDown;	//이전 프레임에 눌렸는지
+}
 ```
 
 </td>
