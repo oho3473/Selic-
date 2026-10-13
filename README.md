@@ -24,7 +24,7 @@ https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
 - AWAY
 - NONE
 
-- [키입력시스템](./KeyManager.h)
+- [키입력시스템](./Game/KeyManager.h)
 
 
 ### 2. 게임 메인 구조
