@@ -5,4 +5,4 @@
 프로젝트에서 게임의 메인 루프와 타자입력처리를 구현했습니다.
 
 # 영상
-https://github.com/user-attachments/assets/https://youtu.be/-deONyGMCnM
+https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
