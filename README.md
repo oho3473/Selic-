@@ -25,6 +25,9 @@ https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
 - AWAY
 - NONE
 
+<details>
+<summary>입력 상태 정의 코드 보기</summary>
+
 ```cpp
 enum class KEYSTATE
 {
@@ -56,6 +59,7 @@ struct KEYINFO
 };
 ```
 
+</details>
 
 
 ### 2. 게임 메인 구조
