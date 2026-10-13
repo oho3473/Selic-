@@ -25,9 +25,6 @@ https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
 - AWAY
 - NONE
 
-<details>
-<summary>입력 상태 정의 코드 보기</summary>
-
 ```cpp
 enum class KEYSTATE
 {
@@ -37,7 +34,11 @@ enum class KEYSTATE
 	AWAY//막 뗀 시점
 	
 };
+```
 
+<details>
+<summary>추가적인 입력 상태 정의 코드 보기</summary>
+```cpp
 enum class KEY
 {
 	LEFT,
