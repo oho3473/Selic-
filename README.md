@@ -20,47 +20,32 @@ https://github.com/user-attachments/assets/d4c54c95-a2e0-4226-9d61-5157c9173d70
 짧은 시간 안에 정확한 입력 처리가 중요한 게임이었기 때문에, 프레임 단위 입력 상태를 관리할 수 있는 `KeyManager`를 설계했습니다.
 단순 Key 입력 여부만 처리하는 것이 아니라, 입력 상태를 분리해 프레임 기반 입력 흐름을 관리했습니다.
 
-- TAP
-- HOLD
-- AWAY
-- NONE
+<table>
+<tr>
+<th>구현 설명</th>
+<th>핵심 코드</th>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+키 입력을 네 가지 상태로 구분했습니다.<br><br>
+이전 프레임의 눌림 여부와 현재 입력을 비교하여 상태를 갱신합니다.
+
+</td>
+<td width="50%" valign="top">
 
 ```cpp
 enum class KEYSTATE
 {
-	NONE,//눌리지도 않았고, 이전에도 안눌림
-	TAP,//막 누른 시점
-	HOLD,//누르고 있는
-	AWAY//막 뗀 시점
-	
+    NONE,
+    TAP,
+    HOLD,
+    AWAY
 };
 ```
 
-<details>
-<summary>추가적인 입력 상태 정의 코드 보기</summary>
-```cpp
-enum class KEY
-{
-	LEFT,
-	RIGHT,
-	UP,
-	DOWN,
-	SPACE,
-	ENTER,
-	BACK,
-	ESCAPE,
-
-	LAST
-};
-
-struct KEYINFO
-{
-	KEYSTATE keystate;	//키 상태
-	bool is_KeyDown;	//이전 프레임에 눌렸는지
-};
-```
-
-</details>
-
+</td>
+</tr>
+</table>
 
 ### 2. 게임 메인 구조
